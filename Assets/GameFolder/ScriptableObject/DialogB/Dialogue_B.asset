@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0bacaa0c5c8fbc419410ac58d2c941d, type: 3}
+  m_Name: Dialogue_B
+  m_EditorClassIdentifier: 
+  otherGuySentence: yes listen to the man cops
+  dialogProp:
+  - {fileID: 11400000, guid: 9dbc63fd190209045bcd0ddc819e91a4, type: 2}
+  - {fileID: 11400000, guid: 20ce95bb9dec9ea43bd5f11e192916d1, type: 2}
+  - {fileID: 11400000, guid: 590143a5ddcf1074683f72a0db267829, type: 2}
+  animCallWord:
+  - 
+  - 
+  - 
+  motionDegree: 0f00000005000000f6ffffff
+  ourSentece:
+  - Keep it clean!!
+  - release the hostage you are scaring
+  - do you have family

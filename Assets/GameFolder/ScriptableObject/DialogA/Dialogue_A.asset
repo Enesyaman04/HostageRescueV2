@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0bacaa0c5c8fbc419410ac58d2c941d, type: 3}
+  m_Name: Dialogue_A
+  m_EditorClassIdentifier: 
+  otherGuySentence: call me a plane now
+  dialogProp:
+  - {fileID: 11400000, guid: a086ed806c2548a4bb7c06e44f2776a1, type: 2}
+  - {fileID: 11400000, guid: 1441d21b49c428a4fa2b143389a516b6, type: 2}
+  - {fileID: 11400000, guid: d173a0dd1165aa54f9716be4ccc59530, type: 2}
+  animCallWord:
+  - 3
+  - 4
+  - 4
+  motionDegree: 0a000000ecffffff0f000000
+  ourSentece:
+  - the plane is too far
+  - of course, however you want
+  - What was the number of the helicopter

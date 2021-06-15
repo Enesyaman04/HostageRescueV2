@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0bacaa0c5c8fbc419410ac58d2c941d, type: 3}
+  m_Name: Dialogue_Begin
+  m_EditorClassIdentifier: 
+  otherGuySentence: stay away, don't approach
+  dialogProp:
+  - {fileID: 11400000, guid: 486104fe1721e4d40811582c04f59f32, type: 2}
+  - {fileID: 11400000, guid: 81602e184195dd945b03cc86cfea6974, type: 2}
+  - {fileID: 11400000, guid: b52cc4d3b987b4241b45111e9d78a72a, type: 2}
+  animCallWord:
+  - 
+  - 
+  - 
+  motionDegree: 05000000f6ffffff14000000
+  ourSentece:
+  - calm down
+  - team walk away
+  - you will go to jail
