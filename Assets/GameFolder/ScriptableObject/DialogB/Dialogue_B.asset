@@ -21,7 +21,10 @@ MonoBehaviour:
   - 
   - 
   - 
-  motionDegree: 0f00000005000000f6ffffff
+  motionDegree:
+  - 20
+  - -20
+  - -20
   ourSentece:
   - Keep it clean!!
   - release the hostage you are scaring

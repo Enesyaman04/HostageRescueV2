@@ -21,7 +21,10 @@ MonoBehaviour:
   - 
   - 
   - 
-  motionDegree: f6fffffffbfffffff6ffffff
+  motionDegree:
+  - -20
+  - -20
+  - 20
   ourSentece:
   - so how many children does she have
   - i just asked

@@ -21,7 +21,10 @@ MonoBehaviour:
   - 
   - 
   - 
-  motionDegree: 0a000000e2ffffff14000000
+  motionDegree:
+  - -20
+  - -20
+  - 20
   ourSentece:
   - you are scaring people
   - i will set you free

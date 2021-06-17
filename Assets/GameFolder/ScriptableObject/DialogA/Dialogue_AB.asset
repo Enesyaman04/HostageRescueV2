@@ -21,7 +21,10 @@ MonoBehaviour:
   - 
   - 
   - 
-  motionDegree: 0f00000005000000ecffffff
+  motionDegree:
+  - 20
+  - 20
+  - -20
   ourSentece:
   - you want a lot
   - what is the car for

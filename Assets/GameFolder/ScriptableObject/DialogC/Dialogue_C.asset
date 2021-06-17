@@ -21,8 +21,11 @@ MonoBehaviour:
   - 
   - 
   - 
-  motionDegree: fbfffffff6ffffff0f000000
+  motionDegree:
+  - -20
+  - -20
+  - 20
   ourSentece:
   - no no no dont do this
   - I don't want blood spilled
-  - release the hostage take me
+  - Your choice

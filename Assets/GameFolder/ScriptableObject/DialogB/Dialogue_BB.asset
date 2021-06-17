@@ -21,7 +21,10 @@ MonoBehaviour:
   - 
   - 
   - 
-  motionDegree: ecffffff050000001e000000
+  motionDegree:
+  - -20
+  - -20
+  - 20
   ourSentece:
   - we already did, just wait
   - where do you live

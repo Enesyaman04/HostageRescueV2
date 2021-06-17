@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 using DG.Tweening;
 
 public class DialogButton : MonoBehaviour
@@ -16,7 +17,8 @@ public class DialogButton : MonoBehaviour
 
     public int callDialogIndex;
 
-
+    ColorBlock currentcolor;
+    Button thebutton;
     public void LogParameters(string animTriggerWord_, float action_, string ourSentence_, DialogProp dialog)
     {
         Visulasion();
@@ -25,24 +27,44 @@ public class DialogButton : MonoBehaviour
         motionDegree = action_;
         dialogProp = dialog;
         sentenceText.text = ourSentence;
+        thebutton = GetComponent<Button>();
+        currentcolor = thebutton.colors;
+        print(motionDegree);
+        if (motionDegree < 0)
+        {
+            currentcolor.pressedColor = Color.green;
+            thebutton.colors = currentcolor;
+        }
+        else
+        {
+            currentcolor.pressedColor = Color.red;
+            thebutton.colors = currentcolor;
+        }
     }
 
     public void CallDialogManager()
     {
+
         Debug.Log(motionDegree);
-        SliderControl.instance.fillAmount += motionDegree / 100;
+        titresim.instance.med();
+        StartCoroutine(CallDialogManagerWait());
+    }
+
+     IEnumerator CallDialogManagerWait()
+    {
+        yield return new WaitForSeconds(1f);
+        SliderControl.instance.FillAmuntPlus(motionDegree/100);
         Debug.Log(SliderControl.instance.fillAmount);
         dialogManager.LogButtonParameters(dialogProp);
     }
-
 
     void Visulasion()
     {
         var sequence = DOTween.Sequence();
 
         sequence.Append(transform.DOScale(Vector3.zero, GameManager.instance.buttonDuration));
-        sequence.Append(transform.DOScale(Vector3.one, GameManager.instance.buttonDuration));
-        sequence.Append(transform.DOScale(Vector3.one * 0.8f, GameManager.instance.buttonDuration));
-        sequence.Append(transform.DOScale(Vector3.one, GameManager.instance.buttonDuration));
+       // sequence.Append(transform.DOScale(Vector3.one, GameManager.instance.buttonDuration));
+        sequence.Append(transform.DOScale(Vector3.one * 1f, GameManager.instance.buttonDuration));
+        //sequence.Append(transform.DOScale(Vector3.one, GameManager.instance.buttonDuration));
     }
 }

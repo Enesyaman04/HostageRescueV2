@@ -21,7 +21,10 @@ MonoBehaviour:
   - 
   - 
   - 
-  motionDegree: f6ffffff19000000f6ffffff
+  motionDegree:
+  - -20
+  - 20
+  - -20
   ourSentece:
   - you heard the man
   - you won't be able to get out of here

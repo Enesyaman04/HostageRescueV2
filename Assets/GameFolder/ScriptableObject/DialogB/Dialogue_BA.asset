@@ -21,7 +21,10 @@ MonoBehaviour:
   - 
   - 
   - 
-  motionDegree: f6ffffff0a00000014000000
+  motionDegree:
+  - -20
+  - 20
+  - -20
   ourSentece:
   - okey okey sorry!!
   - are there others

@@ -21,7 +21,10 @@ MonoBehaviour:
   - 
   - 
   - 
-  motionDegree: 05000000f6ffffff14000000
+  motionDegree:
+  - -20
+  - -10
+  - 20
   ourSentece:
   - calm down
   - team walk away

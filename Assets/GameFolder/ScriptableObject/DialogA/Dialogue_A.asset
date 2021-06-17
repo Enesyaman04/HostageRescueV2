@@ -21,7 +21,10 @@ MonoBehaviour:
   - 3
   - 4
   - 4
-  motionDegree: 0a000000ecffffff0f000000
+  motionDegree:
+  - 20
+  - -20
+  - -20
   ourSentece:
   - the plane is too far
   - of course, however you want

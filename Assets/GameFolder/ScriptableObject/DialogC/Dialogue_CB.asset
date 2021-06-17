@@ -21,7 +21,10 @@ MonoBehaviour:
   - 
   - 
   - 
-  motionDegree: 0a000000d8ffffffecffffff
+  motionDegree:
+  - -20
+  - 25
+  - 20
   ourSentece:
   - Is there anyone waiting for you soon
   - there is a sniper on the roof

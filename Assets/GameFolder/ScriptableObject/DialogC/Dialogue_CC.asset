@@ -21,7 +21,10 @@ MonoBehaviour:
   - 
   - 
   - 
-  motionDegree: fbffffffe2ffffff1e000000
+  motionDegree:
+  - -20
+  - -20
+  - 20
   ourSentece:
   - I'm excited, sorry
   - you won't hurt anyone
