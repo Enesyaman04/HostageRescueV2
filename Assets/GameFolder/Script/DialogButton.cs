@@ -29,7 +29,6 @@ public class DialogButton : MonoBehaviour
         sentenceText.text = ourSentence;
         thebutton = GetComponent<Button>();
         currentcolor = thebutton.colors;
-        print(motionDegree);
         if (motionDegree < 0)
         {
             currentcolor.pressedColor = Color.green;
@@ -48,13 +47,14 @@ public class DialogButton : MonoBehaviour
         Debug.Log(motionDegree);
         titresim.instance.med();
         StartCoroutine(CallDialogManagerWait());
+        
     }
 
      IEnumerator CallDialogManagerWait()
     {
         yield return new WaitForSeconds(1f);
         SliderControl.instance.FillAmuntPlus(motionDegree/100);
-        Debug.Log(SliderControl.instance.fillAmount);
+        FaceMotionSc.instance.ReactionFace();
         dialogManager.LogButtonParameters(dialogProp);
     }
 

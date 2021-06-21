@@ -53,7 +53,6 @@ public class SliderControl : MonoBehaviour
 
         if (fillAmount >= 0.95 && isActive == true)
         {
-            
             isActive = false;
             Observer.OnFinishEvent?.Invoke("Fail");
         }
