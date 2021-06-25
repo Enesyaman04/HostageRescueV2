@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0bacaa0c5c8fbc419410ac58d2c941d, type: 3}
   m_Name: Dialogue_A
   m_EditorClassIdentifier: 
-  otherGuySentence: call me a plane now
+  otherGuySentence: "Don\u2019t waste my time .Give me 5 million $:"
   dialogProp:
   - {fileID: 11400000, guid: a086ed806c2548a4bb7c06e44f2776a1, type: 2}
-  - {fileID: 11400000, guid: 1441d21b49c428a4fa2b143389a516b6, type: 2}
-  - {fileID: 11400000, guid: d173a0dd1165aa54f9716be4ccc59530, type: 2}
+  - {fileID: 11400000, guid: a086ed806c2548a4bb7c06e44f2776a1, type: 2}
+  - {fileID: 11400000, guid: a086ed806c2548a4bb7c06e44f2776a1, type: 2}
   animCallWord:
   - 3
   - 4
@@ -24,8 +24,17 @@ MonoBehaviour:
   motionDegree:
   - 20
   - -20
-  - -20
+  - -10
   ourSentece:
-  - the plane is too far
-  - of course, however you want
-  - What was the number of the helicopter
+  - dont give him the money
+  - give him the money
+  - give him bag of cand
+  LongDialog:
+  - We will not give you money. Surrender  now
+  - Here is bag of Money,We cant give you that Money
+  - Here is bag of Candy.We cant give you that Money
+  Hosimage: {fileID: 21300000, guid: 68641f726d248e24eb35e32518d40c1e, type: 3}
+  Buttonimage:
+  - {fileID: 21300000, guid: 38e2614e046dd6844a0bd86adf9ef58c, type: 3}
+  - {fileID: 21300000, guid: 68641f726d248e24eb35e32518d40c1e, type: 3}
+  - {fileID: 21300000, guid: c81f21b9857808041b482c873ebfd6ce, type: 3}

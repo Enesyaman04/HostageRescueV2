@@ -29,3 +29,7 @@ MonoBehaviour:
   - you heard the man
   - you won't be able to get out of here
   - we can give you money
+  LongDialog:
+  - You heard the man. Fulfill your request.
+  - You won't be able to get out of here. You will go to prison.
+  - We can give you money. Free the hostages

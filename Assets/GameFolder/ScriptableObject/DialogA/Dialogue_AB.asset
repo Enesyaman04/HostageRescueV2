@@ -29,3 +29,7 @@ MonoBehaviour:
   - you want a lot
   - what is the car for
   - Bring a car now !!
+  LongDialog:
+  - You want a lot.Ask for something we can do
+  - What is the car for ? to escape?
+  - Bring the car here. Quickly !!!

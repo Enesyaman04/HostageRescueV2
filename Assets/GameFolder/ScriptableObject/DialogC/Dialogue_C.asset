@@ -29,3 +29,7 @@ MonoBehaviour:
   - no no no dont do this
   - I don't want blood spilled
   - Your choice
+  LongDialog:
+  - I think you want me to shoot the hostage
+  - I don't want bloodshed. free the hostages. May it end with a happy ending.
+  - Whatever you want

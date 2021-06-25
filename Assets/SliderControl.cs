@@ -8,6 +8,8 @@ public class SliderControl : MonoBehaviour
 {
     public static SliderControl instance;
     [SerializeField] Image ımage;
+    [SerializeField] RawImage ımage2;
+    [SerializeField] Image ımage3;
     [SerializeField] float offset;
 
     public float fillAmount;
@@ -16,6 +18,8 @@ public class SliderControl : MonoBehaviour
     float time;
 
     Color imageColor;
+    Color İmage2Color;
+    Color İmage3Color;
 
     bool isActive = true;
 
@@ -55,11 +59,16 @@ public class SliderControl : MonoBehaviour
         {
             isActive = false;
             Observer.OnFinishEvent?.Invoke("Fail");
+            GameManager.instance.LevelFail();
+            FaceMotionSc.instance.TurnoffCamNon();
         }
         else if (fillAmount <= 0.05 && isActive == true)
         {
             isActive = false;
             Observer.OnFinishEvent?.Invoke("Win");
+            FaceMotionSc.instance.TurnoffCamNon();
+            GameManager.instance.LevelComplete();
+            GameManager.instance.longobj.SetActive(false);
         }
     }
     public void FillAmuntPlus(float motionDegree2)
@@ -68,5 +77,7 @@ public class SliderControl : MonoBehaviour
         fillAmount = ımage.fillAmount;
         imageColor = new Color(ımage.fillAmount,1-ımage.fillAmount, 0, 1);
         ımage.color = imageColor;
+        ımage2.color = imageColor;
+        ımage3.color = imageColor;
     }
 }

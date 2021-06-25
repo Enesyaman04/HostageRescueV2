@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0bacaa0c5c8fbc419410ac58d2c941d, type: 3}
   m_Name: Dialogue_Begin
   m_EditorClassIdentifier: 
-  otherGuySentence: stay away, don't approach
+  otherGuySentence: I need a car Fast.
   dialogProp:
   - {fileID: 11400000, guid: 486104fe1721e4d40811582c04f59f32, type: 2}
-  - {fileID: 11400000, guid: 81602e184195dd945b03cc86cfea6974, type: 2}
-  - {fileID: 11400000, guid: b52cc4d3b987b4241b45111e9d78a72a, type: 2}
+  - {fileID: 11400000, guid: 486104fe1721e4d40811582c04f59f32, type: 2}
+  - {fileID: 11400000, guid: 486104fe1721e4d40811582c04f59f32, type: 2}
   animCallWord:
   - 
   - 
@@ -26,6 +26,15 @@ MonoBehaviour:
   - -10
   - 20
   ourSentece:
-  - calm down
-  - team walk away
-  - you will go to jail
+  - give him a car.
+  - give him bicycle.
+  - don't give him a car.
+  LongDialog:
+  - 'ok we will give you a car. We can''t give you a car:'
+  - 'ok we will give you a bicycle. We can''t give you a car:'
+  - You will go to prison. You can't escape from here.
+  Hosimage: {fileID: 21300000, guid: f80adb910f2371c42b82a06ee9309baa, type: 3}
+  Buttonimage:
+  - {fileID: 21300000, guid: f80adb910f2371c42b82a06ee9309baa, type: 3}
+  - {fileID: 21300000, guid: ebedea209c8382b43920830012aba960, type: 3}
+  - {fileID: 21300000, guid: eed075d48b4db5b4c9137f491c38de92, type: 3}

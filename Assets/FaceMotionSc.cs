@@ -29,7 +29,7 @@ public class FaceMotionSc : MonoBehaviour
     {
         faceAnim = GetComponent<Animator>();
         faceCam = GameObject.FindGameObjectWithTag("face");
-        faceCam.SetActive(false);
+        //faceCam.SetActive(false);
     }
     public void ReactionFace()
     {
@@ -42,7 +42,7 @@ public class FaceMotionSc : MonoBehaviour
             DOTween.To(() => facevalue, x => facevalue = x, currentvalue, lerptime).OnComplete(() => {
                 Reactionbool = false;
                 facevalue = currentvalue;
-                StartCoroutine(TurnoffCam());
+               // StartCoroutine(TurnoffCam());
             });
         }else if(SliderControl.instance.fillAmount >0.25 && SliderControl.instance.fillAmount <= 0.40)
         {
@@ -51,7 +51,7 @@ public class FaceMotionSc : MonoBehaviour
             DOTween.To(() => facevalue, x => facevalue = x, currentvalue, lerptime).OnComplete(() => {
                 Reactionbool = false;
                 facevalue = currentvalue;
-                StartCoroutine(TurnoffCam());
+              //  StartCoroutine(TurnoffCam());
             });
         }
         else if (SliderControl.instance.fillAmount > 0.40 && SliderControl.instance.fillAmount <= 0.60)
@@ -61,7 +61,7 @@ public class FaceMotionSc : MonoBehaviour
             DOTween.To(() => facevalue, x => facevalue = x, currentvalue, lerptime).OnComplete(() => {
                 Reactionbool = false;
                 facevalue = currentvalue;
-                StartCoroutine(TurnoffCam());
+               // StartCoroutine(TurnoffCam());
             });
         }
         else if (SliderControl.instance.fillAmount > 0.60 && SliderControl.instance.fillAmount <= 0.80)
@@ -71,7 +71,7 @@ public class FaceMotionSc : MonoBehaviour
             DOTween.To(() => facevalue, x => facevalue = x, currentvalue, lerptime).OnComplete(() => {
                 Reactionbool = false;
                 facevalue = currentvalue;
-                StartCoroutine(TurnoffCam());
+                //StartCoroutine(TurnoffCam());
             });
           
         }
@@ -82,9 +82,8 @@ public class FaceMotionSc : MonoBehaviour
             DOTween.To(() => facevalue, x => facevalue = x, currentvalue, lerptime).OnComplete(()=> {
                 Reactionbool = false;
                 facevalue = currentvalue;
-                StartCoroutine(TurnoffCam());
+                //StartCoroutine(TurnoffCam());
             });
-           
         }
     }
     // Update is called once per frame
@@ -98,6 +97,10 @@ public class FaceMotionSc : MonoBehaviour
     IEnumerator TurnoffCam()
     {
         yield return new WaitForSeconds(2f);
+        //faceCam.SetActive(false);
+    }
+    public void TurnoffCamNon()
+    {
         faceCam.SetActive(false);
     }
 }

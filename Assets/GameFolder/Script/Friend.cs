@@ -9,6 +9,7 @@ public class Friend : MonoBehaviour
     public GameObject Police;
     public GameObject CanvasObj;
     public GameObject WinObj;
+    public GameObject FailObj;
     public GameObject muzzlep;
     public float faceblend;
     // Start is called before the first frame update
@@ -39,14 +40,23 @@ public class Friend : MonoBehaviour
             CanvasObj.SetActive(false);
             WinObj.SetActive(true);
             StartCoroutine(winpolice());
-            titresim.instance.med();
+            AudioManager.instance.isEnable = false;
+            AudioManager.instance.isEnable2 = false;
+
+            //titresim.instance.med();
         }
         else
         {
+            Camera.main.transform.DOMove(new Vector3(-1.24f, 3.35f, 4.97f), 2f);
+            Camera.main.transform.DORotate(new Vector3(15f, 11.36f, 0), 2f);
             animator.SetBool("Fail", true);
+            CanvasObj.SetActive(false);
             muzzlep.SetActive(true);
             StartCoroutine(muzz());
-            titresim.instance.med();
+            FailObj.SetActive(true);
+            AudioManager.instance.isEnable = false;
+            AudioManager.instance.isEnable2 = false;
+            //titresim.instance.med();
         }
     }
     IEnumerator winpolice()
