@@ -73,6 +73,7 @@ public class SliderControl : MonoBehaviour
     }
     public void FillAmuntPlus(float motionDegree2)
     {
+        print("------         " + motionDegree2);
         ımage.fillAmount = ımage.fillAmount + motionDegree2;
         fillAmount = ımage.fillAmount;
         imageColor = new Color(ımage.fillAmount,1-ımage.fillAmount, 0, 1);

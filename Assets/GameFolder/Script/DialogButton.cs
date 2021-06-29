@@ -62,6 +62,7 @@ public class DialogButton : MonoBehaviour
             currentcolor.selectedColor = Color.red;
             thebutton.colors = currentcolor;
         }
+        SliderControl.instance.FillAmuntPlus(motionDegree / 100);
         StartCoroutine(closeLong());
         StartCoroutine(CallDialogManagerWait());
     }
@@ -69,11 +70,9 @@ public class DialogButton : MonoBehaviour
      IEnumerator CallDialogManagerWait()
     {
         yield return new WaitForSeconds(1f);
-        
         longtextobj.SetActive(true);
         AudioManager.instance.isEnable = true;
         dialogManager.LogButtonParameters(dialogProp);
-        SliderControl.instance.FillAmuntPlus(motionDegree / 100);
         dialogManager.otherGuyContain.transform.DOMoveZ(15000f, 0.1f);
         dialogManager.otherGuyContain.transform.DOMoveZ(15, 0.1f).SetDelay(3f).OnComplete(()=> {
             dialogManager.cleartxt();
