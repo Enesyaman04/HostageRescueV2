@@ -67,7 +67,7 @@ public class SliderControl : MonoBehaviour
             isActive = false;
             Observer.OnFinishEvent?.Invoke("Win");
             FaceMotionSc.instance.TurnoffCamNon();
-            GameManager.instance.LevelComplete();
+           GameManager.instance.LevelComplete();
             GameManager.instance.longobj.SetActive(false);
         }
     }

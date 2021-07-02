@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Tabtale.TTPlugins;
+//using Tabtale.TTPlugins;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        TTPCore.Setup();
+        //TTPCore.Setup();
     }
     private void Start()
     {
@@ -30,16 +30,16 @@ public class GameManager : MonoBehaviour
 
     public void LevelComplete()
     {
-        TTPGameProgression.FirebaseEvents.MissionComplete(null);
+      //  TTPGameProgression.FirebaseEvents.MissionComplete(null);
     }
     public void LevelFail()
     {
-        TTPGameProgression.FirebaseEvents.MissionFailed(null);
+       // TTPGameProgression.FirebaseEvents.MissionFailed(null);
     }
     public void LevelStart()
     {
-        TTPGameProgression.FirebaseEvents.MissionStarted(1,
-            null);
+        //TTPGameProgression.FirebaseEvents.MissionStarted(1,null);
+
     }
 
     public void LevelRestart()
